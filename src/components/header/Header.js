@@ -1,20 +1,13 @@
 import React from "react";
-
+import "./Header.css"
 
 function Header(){
     return (
-        <div className="header">
+        <header className="navbar">
            <nav>
-               <a>Logo</a>
-               <ul>
-                   <li>About</li>
-                   <li>Settings</li>
-                   <li>Register</li>
-                   <li>Login</li>
-                </ul> 
+               <h2>Notes📝</h2> 
            </nav>
-
-        </div>
+        </header>
     );
 }
 

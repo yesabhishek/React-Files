@@ -1,0 +1,29 @@
+.paper {
+    background: rgb(255, 187, 0);
+    box-shadow:
+      /* The top layer shadow */
+      0 -1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 -10px 0 -5px rgb(243, 219, 4),
+      /* The second layer shadow */
+      0 -10px 1px -4px rgba(0,0,0,0.15),
+       /* The third layer */
+      0 -20px 0 -10px rgb(255, 196, 0),
+      /* The third layer shadow */
+      0 -20px 1px -9px rgba(0,0,0,0.15);
+      /* Padding for demo purposes */
+      padding: 30px;
+      color: black;
+      width: 60%;
+
+      
+  }
+
+  input[type=checkbox] {
+      margin-right: 10px;
+      font-size: 30px;
+  }
+
+  input[type=checkbox]:focus{
+      outline: 0;
+  }

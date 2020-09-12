@@ -1,0 +1,19 @@
+.body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgb(27, 20, 20);
+    height: 100px;
+    color: whitesmoke;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 30px;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+
+}
+

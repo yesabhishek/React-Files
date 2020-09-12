@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import Body from "../components/body/Body";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-
+import Notes from "../components/notes/Notes";
+import Card from "../components/contact-cards/Card"
 
 export default class Main extends Component {
     render() {
