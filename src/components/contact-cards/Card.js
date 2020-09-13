@@ -6,16 +6,16 @@ function Card(props){
         <div class="cards">
             <div class="card">
                 <h2><a href="#">{props.name}</a></h2>
-                <p>{props.email}</p>
+                <h6>{props.email}</h6>
             </div>
             <div class="card">
                 <h2><a href="#">{props.name}</a></h2>
-                <p>{props.email}</p>
+                <h6>{props.email}</h6>
             </div>
 
             <div class="card">
                 <h2><a href="#">{props.name}</a></h2>
-                <p>{props.email}</p>
+                <h6>{props.email}</h6>
             </div>
         </div>
 

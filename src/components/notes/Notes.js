@@ -3,12 +3,19 @@ import "./Notes.css"
 
 
 
-function Notes(){
+function Notes(props){
 
     return (
         <div className="paper" align="center">
-            <input type="checkbox"></input>
-            <p>Text here</p>
+            <input type="checkbox" 
+            checked={props.item.completed} 
+            onChange={ () => { console.log("Done")}}
+            />
+            
+            <p>{props.note}</p>
+            <button onClick={() => 
+                console.log("you just cliked a button!")
+            }>Dont Click</button>
             <br></br>
         </div>
     );
