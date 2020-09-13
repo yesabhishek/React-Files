@@ -1,24 +1,38 @@
-import React from "react";
-import "./Notes.css"
+import React, { Component } from "react";
+import "./Notes.css";
 
 
-
-function Notes(props){
-
-    return (
-        <div className="paper" align="center">
-            <input type="checkbox" 
-            checked={props.item.completed} 
-            onChange={ () => { console.log("Done")}}
-            />
-            
-            <p>{props.note}</p>
-            <button onClick={() => 
-                console.log("you just cliked a button!")
-            }>Dont Click</button>
-            <br></br>
-        </div>
-    );
+class Notes extends Component
+{
+    constructor(){
+        super()
+        this.state = {
+            Note: "This is a sample note data",
+            complete: 0
+        }
+    }
+    render()
+    {
+        return(
+            <div className="paper" align="center">
+                <input type="checkbox" 
+                
+                onChange={ () => { console.log("Done")}}
+                />
+                
+                <p>{this.state.Note}</p>
+                <button onClick={() => 
+                    console.log(this.complete = 2)
+                }>Complete</button>
+                <br></br>
+            </div>
+    
+        )
+                
+    }
+        
 }
+
+
 
 export default Notes;
