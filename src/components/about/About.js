@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import './About.css'
+import Body from '../body/Body'
+
 
 class About extends Component{
     constructor(){
@@ -8,10 +10,11 @@ class About extends Component{
             count : 0
         }
     }
+
     render(){
         
         return(
-            <div className="about-section">
+            <div className="about-section" >
                 <h1 align="center">About Section</h1>
                 <button onClick={ () => { console.log(this.setState((prevState => {
                     return {

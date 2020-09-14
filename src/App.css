@@ -1,3 +1,7 @@
-::-webkit-scrollbar{
-    color:blue;
+
+
+body, html {
+    height: 100%;
+    
 }
+

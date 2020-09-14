@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Post.css';
-import { stockData } from '../data/Data';
+import { stateData } from '../data/Data';
 
 class Post extends Component{
     render(){
@@ -9,10 +9,10 @@ class Post extends Component{
             <div className="post">
                 <h3 className="date">Posts made on {c_date.getDate()+"/"+c_date.getMonth()+"/"+c_date.getFullYear()}</h3>
                 
-{stockData.map((data, key) => {
+{stateData.map((data, key) => {
           return (
             <p key={key}>
-              {data.company +
+              {data.state +
                 " , " +
                 data.ticker +
                 " ," +

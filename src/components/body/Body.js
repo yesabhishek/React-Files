@@ -1,7 +1,10 @@
 import React, {Component} from "react";
 import "./Body.css"
-import Notes from "../notes/Notes"
+import {stateData} from '../data/Data'
+/* import Notes from "../notes/Notes"
 import Card from "../contact-cards/Card"
+import Post from '../post/Post'
+ */
 
 
 class Body extends React.Component{
@@ -39,32 +42,71 @@ class Body extends React.Component{
                 styles.color = "#4c4c4c"
                 styles.backgroundColor = "#191919"
             }
+
         
         return(
-            <div className="body" align="center" style={styles}>
-            
-            <Notes 
-            note="This is a sample note"
-            item="yes"/>
-            <Notes
-            note="This is a whats note"
-            item="yes"/>
-            <Notes 
-            note="haha"
-            item="No"/>
-            <Notes 
-            note="This is a sample note that you dont know"
-            item="yes"/>
-            <Card 
-            name= "Abhishek"
-            email= "something@email.com"
-            />
-            <br></br>
-        </div>
-        )
-    }
+            <div style={styles}>
+                 <div className="container-table100">
+                    <div className="wrap-table100">
+                        <div className="table">
     
+                            <div className="row header">
+                                <div className="cell">
+                                    State/Union territory
+                                </div>
+                                <div className="cell">
+                                    Men
+                                </div>
+                                <div className="cell">
+                                    Women
+                                </div>
+                                <div className="cell">
+                                    Children
+                                </div>
+                                <div className="cell">
+                                    Last Updated
+                                </div>
+                        </div>      
+                       
+                           
+            {stateData.map((data, key) => {
+                return (
+
+                       
+                            
+                            <div className="row">
+                                <a className="cell" data-title="State/Union territory" key={key} href="#">
+                                    {data.state}
+                                </a>
+                                <div className="cell" data-title="Men" >
+                                    0
+                                </div>
+                                <div className="cell" data-title="Women">
+                                    0
+                                </div>
+                                <div className="cell" data-title="Children">
+                                    0
+                                </div>
+                                <div className="cell" data-title="Last Updated">
+                                {date.getDate()+"/"+date.getMonth()+"/"+date.getFullYear()}
+                                </div>
+                            </div>
+                        
+
+                       
+                ); })}
+               
+               </div>
+            </div>
+        </div> 
+                              
+    </div>        
+                
+        )   
+            
     }
+        
+}
     
 
 
